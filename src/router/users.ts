@@ -1,7 +1,7 @@
 import express from 'express';
 
 // Importing controllers and middleware
-import { getAllUsers, deleteUser } from '../controllers/users';
+import { deleteUser, updateUser } from '../controllers/users';
 import { isAuthenticated, isOwner } from '../middlewares';
 import { requireAuth } from '../middlewares/authMiddleware';
 import { getUsers } from '../db/users'; // Assuming this path is correct
@@ -15,4 +15,5 @@ export default (router: express.Router) => {
 
     // Keeping the existing delete route with its middleware
     router.delete('/users/:id', isAuthenticated, isOwner, deleteUser);
+    router.patch('/users/:id', isAuthenticated, isOwner, updateUser);
 };
