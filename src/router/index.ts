@@ -11,3 +11,4 @@ export default (): express.Router => {
     
   return router;
 };
+
