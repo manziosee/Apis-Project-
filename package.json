@@ -33,6 +33,8 @@
     "lodash": "^4.17.21",
     "make-error": "^1.3.6",
     "mongoose": "^8.4.0",
+    "nodemailer": "^6.9.13",
+    "speakeasy": "^2.0.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
     "typescript": "^5.4.5",
