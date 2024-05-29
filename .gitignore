@@ -1,0 +1,7 @@
+ node_modules/
+   .log
+   .cmd
+   .ps1
+  .json
+  .env
+
