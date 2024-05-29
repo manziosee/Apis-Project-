@@ -18,4 +18,3 @@ export const requireAuth = (req: express.Request, res: express.Response, next: e
     }
     next();
 };
-
